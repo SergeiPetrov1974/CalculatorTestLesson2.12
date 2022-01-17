@@ -21,9 +21,9 @@ public class CalculatorServiceImplTest {
     @Test
     public void shouldReturnCorrectSubtractionResult() {
         int result1 = Integer.parseInt(out.getNegative(TEST_NUM1, TEST_NUM1));
-        assertEquals(0, result1);
+        assertEquals(TEST_NUM1 -TEST_NUM1, result1);
         int result2 = Integer.parseInt(out.getNegative(TEST_NUM2, TEST_NUM2));
-        assertEquals(0, result2);
+        assertEquals(TEST_NUM2 - TEST_NUM2, result2);
     }
 
     @Test
