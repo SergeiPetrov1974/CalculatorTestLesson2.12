@@ -27,7 +27,10 @@ public class CalculatorServiceImpl implements CalculatorService{
 
     @Override
     public String getDivide(int value1, int value2) {
-        totalSum = value1 / value2;
-        return String.valueOf(totalSum);
+        if (value2 != 0){
+            totalSum = value1 / value2;
+            return String.valueOf(totalSum);
+        }
+        throw new IllegalArgumentException("Делить на ноль нельзя!");
     }
 }

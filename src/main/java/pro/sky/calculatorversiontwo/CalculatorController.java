@@ -54,9 +54,7 @@ public class CalculatorController {
         if (value1 == null || value2 == null) {
             return "Не указан параметр";
         }
-        if (value2 == 0) {
-            return "На ноль делить нельзя. Измените значение: " + value2;
-        }
+
         return "Результат деления: " + value1 + " / " + value2 + " = "
                 + calculatorService.getDivide(value1, value2);
     }
